@@ -1,0 +1,807 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml ModuloInterface.twx ModuloInterface.ncd -o
+ModuloInterface.twr ModuloInterface.pcf -ucf PINAGEM.ucf
+
+Design file:              ModuloInterface.ncd
+Physical constraint file: ModuloInterface.pcf
+Device,package,speed:     xc3s700an,fgg484,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1577 paths analyzed, 111 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.743ns.
+--------------------------------------------------------------------------------
+
+Paths for end point BLOCO_CLK/aux_31 (SLICE_X36Y87.CIN), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.257ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_1 (FF)
+  Destination:          BLOCO_CLK/aux_31 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.650ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.093ns (0.007 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_1 to BLOCO_CLK/aux_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y72.YQ      Tcko                  0.676   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux_1
+    SLICE_X36Y72.G2      net (fanout=2)        0.482   BLOCO_CLK/aux<1>
+    SLICE_X36Y72.COUT    Topcyg                1.296   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux<1>_rt
+                                                       BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.COUT    Tbyp                  0.156   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.COUT    Tbyp                  0.156   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.COUT    Tbyp                  0.156   BLOCO_CLK/aux<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.COUT    Tbyp                  0.156   BLOCO_CLK/aux<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.COUT    Tbyp                  0.156   BLOCO_CLK/aux<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.COUT    Tbyp                  0.156   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.COUT    Tbyp                  0.156   BLOCO_CLK/aux<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.COUT    Tbyp                  0.156   BLOCO_CLK/aux<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.COUT    Tbyp                  0.156   BLOCO_CLK/aux<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.COUT    Tbyp                  0.156   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.COUT    Tbyp                  0.156   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.COUT    Tbyp                  0.156   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.COUT    Tbyp                  0.156   BLOCO_CLK/aux<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.COUT    Tbyp                  0.156   BLOCO_CLK/aux<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<29>
+    SLICE_X36Y87.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<29>
+    SLICE_X36Y87.CLK     Tcinck                1.012   BLOCO_CLK/aux<30>
+                                                       BLOCO_CLK/Mcount_aux_cy<30>
+                                                       BLOCO_CLK/Mcount_aux_xor<31>
+                                                       BLOCO_CLK/aux_31
+    -------------------------------------------------  ---------------------------
+    Total                                      5.650ns (5.168ns logic, 0.482ns route)
+                                                       (91.5% logic, 8.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.349ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_0 (FF)
+  Destination:          BLOCO_CLK/aux_31 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.558ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.093ns (0.007 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_0 to BLOCO_CLK/aux_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y72.XQ      Tcko                  0.631   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux_0
+    SLICE_X36Y72.F4      net (fanout=2)        0.426   BLOCO_CLK/aux<0>
+    SLICE_X36Y72.COUT    Topcyf                1.305   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/Mcount_aux_lut<0>_INV_0
+                                                       BLOCO_CLK/Mcount_aux_cy<0>
+                                                       BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.COUT    Tbyp                  0.156   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.COUT    Tbyp                  0.156   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.COUT    Tbyp                  0.156   BLOCO_CLK/aux<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.COUT    Tbyp                  0.156   BLOCO_CLK/aux<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.COUT    Tbyp                  0.156   BLOCO_CLK/aux<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.COUT    Tbyp                  0.156   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.COUT    Tbyp                  0.156   BLOCO_CLK/aux<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.COUT    Tbyp                  0.156   BLOCO_CLK/aux<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.COUT    Tbyp                  0.156   BLOCO_CLK/aux<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.COUT    Tbyp                  0.156   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.COUT    Tbyp                  0.156   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.COUT    Tbyp                  0.156   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.COUT    Tbyp                  0.156   BLOCO_CLK/aux<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.COUT    Tbyp                  0.156   BLOCO_CLK/aux<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<29>
+    SLICE_X36Y87.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<29>
+    SLICE_X36Y87.CLK     Tcinck                1.012   BLOCO_CLK/aux<30>
+                                                       BLOCO_CLK/Mcount_aux_cy<30>
+                                                       BLOCO_CLK/Mcount_aux_xor<31>
+                                                       BLOCO_CLK/aux_31
+    -------------------------------------------------  ---------------------------
+    Total                                      5.558ns (5.132ns logic, 0.426ns route)
+                                                       (92.3% logic, 7.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.437ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_2 (FF)
+  Destination:          BLOCO_CLK/aux_31 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.470ns (Levels of Logic = 15)
+  Clock Path Skew:      -0.093ns (0.007 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_2 to BLOCO_CLK/aux_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y73.XQ      Tcko                  0.631   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/aux_2
+    SLICE_X36Y73.F1      net (fanout=2)        0.494   BLOCO_CLK/aux<2>
+    SLICE_X36Y73.COUT    Topcyf                1.305   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/aux<2>_rt
+                                                       BLOCO_CLK/Mcount_aux_cy<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.COUT    Tbyp                  0.156   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.COUT    Tbyp                  0.156   BLOCO_CLK/aux<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.COUT    Tbyp                  0.156   BLOCO_CLK/aux<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.COUT    Tbyp                  0.156   BLOCO_CLK/aux<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.COUT    Tbyp                  0.156   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.COUT    Tbyp                  0.156   BLOCO_CLK/aux<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.COUT    Tbyp                  0.156   BLOCO_CLK/aux<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.COUT    Tbyp                  0.156   BLOCO_CLK/aux<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.COUT    Tbyp                  0.156   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.COUT    Tbyp                  0.156   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.COUT    Tbyp                  0.156   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.COUT    Tbyp                  0.156   BLOCO_CLK/aux<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.COUT    Tbyp                  0.156   BLOCO_CLK/aux<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<29>
+    SLICE_X36Y87.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<29>
+    SLICE_X36Y87.CLK     Tcinck                1.012   BLOCO_CLK/aux<30>
+                                                       BLOCO_CLK/Mcount_aux_cy<30>
+                                                       BLOCO_CLK/Mcount_aux_xor<31>
+                                                       BLOCO_CLK/aux_31
+    -------------------------------------------------  ---------------------------
+    Total                                      5.470ns (4.976ns logic, 0.494ns route)
+                                                       (91.0% logic, 9.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point BLOCO_CLK/aux_29 (SLICE_X36Y86.CIN), 28 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.413ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_1 (FF)
+  Destination:          BLOCO_CLK/aux_29 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.494ns (Levels of Logic = 15)
+  Clock Path Skew:      -0.093ns (0.007 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_1 to BLOCO_CLK/aux_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y72.YQ      Tcko                  0.676   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux_1
+    SLICE_X36Y72.G2      net (fanout=2)        0.482   BLOCO_CLK/aux<1>
+    SLICE_X36Y72.COUT    Topcyg                1.296   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux<1>_rt
+                                                       BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.COUT    Tbyp                  0.156   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.COUT    Tbyp                  0.156   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.COUT    Tbyp                  0.156   BLOCO_CLK/aux<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.COUT    Tbyp                  0.156   BLOCO_CLK/aux<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.COUT    Tbyp                  0.156   BLOCO_CLK/aux<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.COUT    Tbyp                  0.156   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.COUT    Tbyp                  0.156   BLOCO_CLK/aux<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.COUT    Tbyp                  0.156   BLOCO_CLK/aux<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.COUT    Tbyp                  0.156   BLOCO_CLK/aux<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.COUT    Tbyp                  0.156   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.COUT    Tbyp                  0.156   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.COUT    Tbyp                  0.156   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.COUT    Tbyp                  0.156   BLOCO_CLK/aux<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CLK     Tcinck                1.012   BLOCO_CLK/aux<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<28>
+                                                       BLOCO_CLK/Mcount_aux_xor<29>
+                                                       BLOCO_CLK/aux_29
+    -------------------------------------------------  ---------------------------
+    Total                                      5.494ns (5.012ns logic, 0.482ns route)
+                                                       (91.2% logic, 8.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.505ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_0 (FF)
+  Destination:          BLOCO_CLK/aux_29 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.402ns (Levels of Logic = 15)
+  Clock Path Skew:      -0.093ns (0.007 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_0 to BLOCO_CLK/aux_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y72.XQ      Tcko                  0.631   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux_0
+    SLICE_X36Y72.F4      net (fanout=2)        0.426   BLOCO_CLK/aux<0>
+    SLICE_X36Y72.COUT    Topcyf                1.305   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/Mcount_aux_lut<0>_INV_0
+                                                       BLOCO_CLK/Mcount_aux_cy<0>
+                                                       BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<1>
+    SLICE_X36Y73.COUT    Tbyp                  0.156   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.COUT    Tbyp                  0.156   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.COUT    Tbyp                  0.156   BLOCO_CLK/aux<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.COUT    Tbyp                  0.156   BLOCO_CLK/aux<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.COUT    Tbyp                  0.156   BLOCO_CLK/aux<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.COUT    Tbyp                  0.156   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.COUT    Tbyp                  0.156   BLOCO_CLK/aux<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.COUT    Tbyp                  0.156   BLOCO_CLK/aux<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.COUT    Tbyp                  0.156   BLOCO_CLK/aux<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.COUT    Tbyp                  0.156   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.COUT    Tbyp                  0.156   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.COUT    Tbyp                  0.156   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.COUT    Tbyp                  0.156   BLOCO_CLK/aux<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CLK     Tcinck                1.012   BLOCO_CLK/aux<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<28>
+                                                       BLOCO_CLK/Mcount_aux_xor<29>
+                                                       BLOCO_CLK/aux_29
+    -------------------------------------------------  ---------------------------
+    Total                                      5.402ns (4.976ns logic, 0.426ns route)
+                                                       (92.1% logic, 7.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.593ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_2 (FF)
+  Destination:          BLOCO_CLK/aux_29 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.314ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.093ns (0.007 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_2 to BLOCO_CLK/aux_29
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y73.XQ      Tcko                  0.631   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/aux_2
+    SLICE_X36Y73.F1      net (fanout=2)        0.494   BLOCO_CLK/aux<2>
+    SLICE_X36Y73.COUT    Topcyf                1.305   BLOCO_CLK/aux<2>
+                                                       BLOCO_CLK/aux<2>_rt
+                                                       BLOCO_CLK/Mcount_aux_cy<2>
+                                                       BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<3>
+    SLICE_X36Y74.COUT    Tbyp                  0.156   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<4>
+                                                       BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<5>
+    SLICE_X36Y75.COUT    Tbyp                  0.156   BLOCO_CLK/aux<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<6>
+                                                       BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<7>
+    SLICE_X36Y76.COUT    Tbyp                  0.156   BLOCO_CLK/aux<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<8>
+                                                       BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<9>
+    SLICE_X36Y77.COUT    Tbyp                  0.156   BLOCO_CLK/aux<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<10>
+                                                       BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<11>
+    SLICE_X36Y78.COUT    Tbyp                  0.156   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<12>
+                                                       BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<13>
+    SLICE_X36Y79.COUT    Tbyp                  0.156   BLOCO_CLK/aux<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<14>
+                                                       BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<15>
+    SLICE_X36Y80.COUT    Tbyp                  0.156   BLOCO_CLK/aux<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<16>
+                                                       BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<17>
+    SLICE_X36Y81.COUT    Tbyp                  0.156   BLOCO_CLK/aux<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<18>
+                                                       BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<19>
+    SLICE_X36Y82.COUT    Tbyp                  0.156   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<20>
+                                                       BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<21>
+    SLICE_X36Y83.COUT    Tbyp                  0.156   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<22>
+                                                       BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<23>
+    SLICE_X36Y84.COUT    Tbyp                  0.156   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<24>
+                                                       BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<25>
+    SLICE_X36Y85.COUT    Tbyp                  0.156   BLOCO_CLK/aux<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<26>
+                                                       BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CIN     net (fanout=1)        0.000   BLOCO_CLK/Mcount_aux_cy<27>
+    SLICE_X36Y86.CLK     Tcinck                1.012   BLOCO_CLK/aux<28>
+                                                       BLOCO_CLK/Mcount_aux_cy<28>
+                                                       BLOCO_CLK/Mcount_aux_xor<29>
+                                                       BLOCO_CLK/aux_29
+    -------------------------------------------------  ---------------------------
+    Total                                      5.314ns (4.820ns logic, 0.494ns route)
+                                                       (90.7% logic, 9.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point BLOCO_CLK/aux_12 (SLICE_X36Y78.SR), 32 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     14.561ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_0 (FF)
+  Destination:          BLOCO_CLK/aux_12 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.404ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.035ns (0.065 - 0.100)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_0 to BLOCO_CLK/aux_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y72.XQ      Tcko                  0.631   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux_0
+    SLICE_X37Y78.G3      net (fanout=2)        1.423   BLOCO_CLK/aux<0>
+    SLICE_X37Y78.COUT    Topcyg                1.178   BLOCO_CLK/aux_cmp_eq0000
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_lut<7>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<7>
+    SLICE_X36Y78.SR      net (fanout=16)       1.305   BLOCO_CLK/aux_cmp_eq0000
+    SLICE_X36Y78.CLK     Tsrck                 0.867   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/aux_12
+    -------------------------------------------------  ---------------------------
+    Total                                      5.404ns (2.676ns logic, 2.728ns route)
+                                                       (49.5% logic, 50.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.598ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_23 (FF)
+  Destination:          BLOCO_CLK/aux_12 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.424ns (Levels of Logic = 2)
+  Clock Path Skew:      0.022ns (0.065 - 0.043)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_23 to BLOCO_CLK/aux_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y83.YQ      Tcko                  0.676   BLOCO_CLK/aux<22>
+                                                       BLOCO_CLK/aux_23
+    SLICE_X37Y77.G3      net (fanout=3)        1.268   BLOCO_CLK/aux<23>
+    SLICE_X37Y77.COUT    Topcyg                1.178   BLOCO_CLK/aux_cmp_eq0000_wg_cy<5>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_lut<5>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<5>
+    SLICE_X37Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/aux_cmp_eq0000_wg_cy<5>
+    SLICE_X37Y78.COUT    Tbyp                  0.130   BLOCO_CLK/aux_cmp_eq0000
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<6>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<7>
+    SLICE_X36Y78.SR      net (fanout=16)       1.305   BLOCO_CLK/aux_cmp_eq0000
+    SLICE_X36Y78.CLK     Tsrck                 0.867   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/aux_12
+    -------------------------------------------------  ---------------------------
+    Total                                      5.424ns (2.851ns logic, 2.573ns route)
+                                                       (52.6% logic, 47.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     14.643ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               BLOCO_CLK/aux_20 (FF)
+  Destination:          BLOCO_CLK/aux_12 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      5.379ns (Levels of Logic = 2)
+  Clock Path Skew:      0.022ns (0.065 - 0.043)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: BLOCO_CLK/aux_20 to BLOCO_CLK/aux_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y82.XQ      Tcko                  0.631   BLOCO_CLK/aux<20>
+                                                       BLOCO_CLK/aux_20
+    SLICE_X37Y77.F4      net (fanout=3)        1.251   BLOCO_CLK/aux<20>
+    SLICE_X37Y77.COUT    Topcyf                1.195   BLOCO_CLK/aux_cmp_eq0000_wg_cy<5>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_lut<4>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<4>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<5>
+    SLICE_X37Y78.CIN     net (fanout=1)        0.000   BLOCO_CLK/aux_cmp_eq0000_wg_cy<5>
+    SLICE_X37Y78.COUT    Tbyp                  0.130   BLOCO_CLK/aux_cmp_eq0000
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<6>
+                                                       BLOCO_CLK/aux_cmp_eq0000_wg_cy<7>
+    SLICE_X36Y78.SR      net (fanout=16)       1.305   BLOCO_CLK/aux_cmp_eq0000
+    SLICE_X36Y78.CLK     Tsrck                 0.867   BLOCO_CLK/aux<12>
+                                                       BLOCO_CLK/aux_12
+    -------------------------------------------------  ---------------------------
+    Total                                      5.379ns (2.823ns logic, 2.556ns route)
+                                                       (52.5% logic, 47.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point BLOCO_CLK/aux_0 (SLICE_X36Y72.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.749ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               BLOCO_CLK/aux_0 (FF)
+  Destination:          BLOCO_CLK/aux_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.749ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: BLOCO_CLK/aux_0 to BLOCO_CLK/aux_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y72.XQ      Tcko                  0.505   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/aux_0
+    SLICE_X36Y72.F4      net (fanout=2)        0.341   BLOCO_CLK/aux<0>
+    SLICE_X36Y72.CLK     Tckf        (-Th)    -0.903   BLOCO_CLK/aux<0>
+                                                       BLOCO_CLK/Mcount_aux_lut<0>_INV_0
+                                                       BLOCO_CLK/Mcount_aux_xor<0>
+                                                       BLOCO_CLK/aux_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.749ns (1.408ns logic, 0.341ns route)
+                                                       (80.5% logic, 19.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point BLOCO_CLK/aux_4 (SLICE_X36Y74.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.749ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               BLOCO_CLK/aux_4 (FF)
+  Destination:          BLOCO_CLK/aux_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.749ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: BLOCO_CLK/aux_4 to BLOCO_CLK/aux_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y74.XQ      Tcko                  0.505   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/aux_4
+    SLICE_X36Y74.F4      net (fanout=2)        0.341   BLOCO_CLK/aux<4>
+    SLICE_X36Y74.CLK     Tckf        (-Th)    -0.903   BLOCO_CLK/aux<4>
+                                                       BLOCO_CLK/aux<4>_rt
+                                                       BLOCO_CLK/Mcount_aux_xor<4>
+                                                       BLOCO_CLK/aux_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.749ns (1.408ns logic, 0.341ns route)
+                                                       (80.5% logic, 19.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point BLOCO_CLK/aux_24 (SLICE_X36Y84.F2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.756ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               BLOCO_CLK/aux_24 (FF)
+  Destination:          BLOCO_CLK/aux_24 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.756ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: BLOCO_CLK/aux_24 to BLOCO_CLK/aux_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X36Y84.XQ      Tcko                  0.505   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/aux_24
+    SLICE_X36Y84.F2      net (fanout=3)        0.348   BLOCO_CLK/aux<24>
+    SLICE_X36Y84.CLK     Tckf        (-Th)    -0.903   BLOCO_CLK/aux<24>
+                                                       BLOCO_CLK/aux<24>_rt
+                                                       BLOCO_CLK/Mcount_aux_xor<24>
+                                                       BLOCO_CLK/aux_24
+    -------------------------------------------------  ---------------------------
+    Total                                      1.756ns (1.408ns logic, 0.348ns route)
+                                                       (80.2% logic, 19.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.398ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.801ns (Tcl)
+  Physical resource: BLOCO_CLK/aux<0>/CLK
+  Logical resource: BLOCO_CLK/aux_0/CK
+  Location pin: SLICE_X36Y72.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.398ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.801ns (Tch)
+  Physical resource: BLOCO_CLK/aux<0>/CLK
+  Logical resource: BLOCO_CLK/aux_0/CK
+  Location pin: SLICE_X36Y72.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.398ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.602ns (624.220MHz) (Tcp)
+  Physical resource: BLOCO_CLK/aux<0>/CLK
+  Logical resource: BLOCO_CLK/aux_0/CK
+  Location pin: SLICE_X36Y72.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.743|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1577 paths, 0 nets, and 148 connections
+
+Design statistics:
+   Minimum period:   5.743ns{1}   (Maximum frequency: 174.125MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Jun  7 16:48:53 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 385 MB
+
+
+

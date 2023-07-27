@@ -1,0 +1,163 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+xst -intstyle ise -ifn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PINAGEM.ucf -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf -ucf PINAGEM.ucf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/Trabalho1/ModuleTest.syr" 
+xst -intstyle ise -ifn "/home/sd/Documents/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 
+xst -intstyle ise -ifn "/home/sd/Documents/Trabalho1/ModuleTest.xst" -ofn "/home/sd/Documents/Trabalho1/ModuleTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 ModuleTest.ngc ModuleTest.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o ModuleTest_map.ncd ModuleTest.ngd ModuleTest.pcf 
+par -w -intstyle ise -ol high -t 1 ModuleTest_map.ncd ModuleTest.ncd ModuleTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ModuleTest.twx ModuleTest.ncd -o ModuleTest.twr ModuleTest.pcf 
+bitgen -intstyle ise -f ModuleTest.ut ModuleTest.ncd 

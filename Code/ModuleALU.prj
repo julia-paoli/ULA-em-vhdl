@@ -1,0 +1,5 @@
+vhdl work "ModuleXOR.vhd"
+vhdl work "ModuleOR.vhd"
+vhdl work "ModuleNOT.vhd"
+vhdl work "ModuleAND.vhd"
+vhdl work "ModuleALU.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleALU.ncd
+OUTFILE=/home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleALU.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=/home/ise/Desktop/SD/JuDhayLi/Trabalho1
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

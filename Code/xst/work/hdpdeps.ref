@@ -1,0 +1,103 @@
+V3 79
+FL /home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleALU.vhd 2023/04/28.23:24:00 P.20131013
+FL /home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleAND.vhd 2023/04/28.22:53:13 P.20131013
+FL /home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleNOT.vhd 2023/04/28.22:53:13 P.20131013
+FL /home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleOR.vhd 2023/04/28.22:53:13 P.20131013
+FL /home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleTest.vhd 2023/04/29.01:42:02 P.20131013
+FL /home/ise/Desktop/SD/JuDhayLi/Trabalho1/ModuleXOR.vhd 2023/04/28.22:53:13 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleALU.vhd 2023/06/02.17:02:26 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleAND.vhd 2023/06/02.17:02:26 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleNOT.vhd 2023/06/02.17:02:26 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleOR.vhd 2023/06/02.17:02:26 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleTest.vhd 2023/06/05.11:28:54 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuleXOR.vhd 2023/06/02.17:02:28 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/ModuloInterface.vhd 2023/06/05.12:39:07 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/MY_C2.vhd 2023/06/02.17:02:26 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/MY_MULTIPLICADOR.vhd 2023/06/02.17:02:28 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/MY_SOMADOR.vhd 2023/06/02.17:02:28 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/MY_SUBTRATOR.vhd 2023/06/02.17:02:28 P.20131013
+FL /home/sd/Documents/JuDhayLi/JuDhayLi/Trabalho1/SOMADOR_1BIT.vhd 2023/06/02.17:02:28 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/ModuleALU.vhd 2023/06/02.15:49:15 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/ModuleAND.vhd 2023/04/28.22:53:12 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/ModuleNOT.vhd 2023/04/28.22:53:12 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/ModuleOR.vhd 2023/04/28.22:53:12 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/ModuleTest.vhd 2023/06/02.15:34:10 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/ModuleXOR.vhd 2023/04/28.22:53:12 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/MY_C2.vhd 2023/06/02.15:48:21 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/MY_MULTIPLICADOR.vhd 2023/05/19.16:49:44 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/MY_SOMADOR.vhd 2023/05/19.15:53:56 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/MY_SUBTRATOR.vhd 2023/05/19.16:22:20 P.20131013
+FL /home/sd/Documents/JuDhayLi/Trabalho1/SOMADOR_1BIT.vhd 2023/05/19.17:08:14 P.20131013
+FL /home/sd/Documents/Trabalho1/ModuleALU.vhd 2023/06/05.12:49:54 P.20131013
+EN work/ModuleALU 1686167325 FL /home/sd/Documents/Trabalho1/ModuleALU.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ModuleALU/Behavioral 1686167326 \
+      FL /home/sd/Documents/Trabalho1/ModuleALU.vhd EN work/ModuleALU 1686167325 \
+      CP ModuleAND CP ModuleOR CP ModuleNOT CP ModuleXOR CP MY_SOMADOR_4BIT \
+      CP MY_SUBTRATOR_4BIT CP MY_MULTIPLICADOR CP MY_C2
+FL /home/sd/Documents/Trabalho1/ModuleAND.vhd 2023/06/05.12:49:56 P.20131013
+EN work/ModuleAND 1686167309 FL /home/sd/Documents/Trabalho1/ModuleAND.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ModuleAND/Behavioral 1686167310 \
+      FL /home/sd/Documents/Trabalho1/ModuleAND.vhd EN work/ModuleAND 1686167309
+FL /home/sd/Documents/Trabalho1/ModuleInterface.vhd 2023/06/07.16:48:17 P.20131013
+EN work/ModuloInterface 1686167327 \
+      FL /home/sd/Documents/Trabalho1/ModuleInterface.vhd PB ieee/std_logic_1164 1381692176
+AR work/ModuloInterface/Behavioral 1686167328 \
+      FL /home/sd/Documents/Trabalho1/ModuleInterface.vhd EN work/ModuloInterface 1686167327 \
+      CP redutorClock CP ModuleALU
+FL /home/sd/Documents/Trabalho1/ModuleNOT.vhd 2023/06/05.12:49:56 P.20131013
+EN work/ModuleNOT 1686167313 FL /home/sd/Documents/Trabalho1/ModuleNOT.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ModuleNOT/Behavioral 1686167314 \
+      FL /home/sd/Documents/Trabalho1/ModuleNOT.vhd EN work/ModuleNOT 1686167313
+FL /home/sd/Documents/Trabalho1/ModuleOR.vhd 2023/06/05.12:49:56 P.20131013
+EN work/ModuleOR 1686167311 FL /home/sd/Documents/Trabalho1/ModuleOR.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ModuleOR/Behavioral 1686167312 \
+      FL /home/sd/Documents/Trabalho1/ModuleOR.vhd EN work/ModuleOR 1686167311
+FL /home/sd/Documents/Trabalho1/ModuleTest.vhd 2023/06/05.12:49:56 P.20131013
+EN work/ModuleTest 1686162668 FL /home/sd/Documents/Trabalho1/ModuleTest.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ModuleTest/Behavioral 1686162669 \
+      FL /home/sd/Documents/Trabalho1/ModuleTest.vhd EN work/ModuleTest 1686162668 \
+      CP ModuleALU
+FL /home/sd/Documents/Trabalho1/ModuleXOR.vhd 2023/06/05.12:49:56 P.20131013
+EN work/ModuleXOR 1686167315 FL /home/sd/Documents/Trabalho1/ModuleXOR.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ModuleXOR/Behavioral 1686167316 \
+      FL /home/sd/Documents/Trabalho1/ModuleXOR.vhd EN work/ModuleXOR 1686167315
+FL /home/sd/Documents/Trabalho1/MY_C2.vhd 2023/06/05.12:49:56 P.20131013
+EN work/MY_C2 1686167321 FL /home/sd/Documents/Trabalho1/MY_C2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/MY_C2/Behavioral 1686167322 \
+      FL /home/sd/Documents/Trabalho1/MY_C2.vhd EN work/MY_C2 1686167321 \
+      CP MY_SOMADOR_4BIT
+FL /home/sd/Documents/Trabalho1/MY_MULTIPLICADOR.vhd 2023/06/05.12:49:56 P.20131013
+EN work/MY_MULTIPLICADOR 1686167319 \
+      FL /home/sd/Documents/Trabalho1/MY_MULTIPLICADOR.vhd PB ieee/std_logic_1164 1381692176
+AR work/MY_MULTIPLICADOR/Behavioral 1686167320 \
+      FL /home/sd/Documents/Trabalho1/MY_MULTIPLICADOR.vhd \
+      EN work/MY_MULTIPLICADOR 1686167319 CP MY_SOMADOR_1BIT
+FL /home/sd/Documents/Trabalho1/MY_SOMADOR.vhd 2023/06/05.12:49:56 P.20131013
+EN work/MY_SOMADOR_4BIT 1686167307 FL /home/sd/Documents/Trabalho1/MY_SOMADOR.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/MY_SOMADOR_4BIT/Behavioral 1686167308 \
+      FL /home/sd/Documents/Trabalho1/MY_SOMADOR.vhd EN work/MY_SOMADOR_4BIT 1686167307 \
+      CP MY_SOMADOR_1BIT
+FL /home/sd/Documents/Trabalho1/MY_SUBTRATOR.vhd 2023/06/05.12:49:56 P.20131013
+EN work/MY_SUBTRATOR_4BIT 1686167317 \
+      FL /home/sd/Documents/Trabalho1/MY_SUBTRATOR.vhd PB ieee/std_logic_1164 1381692176
+AR work/MY_SUBTRATOR_4BIT/Behavioral 1686167318 \
+      FL /home/sd/Documents/Trabalho1/MY_SUBTRATOR.vhd EN work/MY_SUBTRATOR_4BIT 1686167317 \
+      CP MY_SOMADOR_4BIT
+FL /home/sd/Documents/Trabalho1/redutorClock.vhd 2023/06/07.15:34:04 P.20131013
+EN work/redutorClock 1686167323 FL /home/sd/Documents/Trabalho1/redutorClock.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/redutorClock/arcRedutorClock 1686167324 \
+      FL /home/sd/Documents/Trabalho1/redutorClock.vhd EN work/redutorClock 1686167323
+FL /home/sd/Documents/Trabalho1/SOMADOR_1BIT.vhd 2023/06/05.12:49:56 P.20131013
+EN work/MY_SOMADOR_1BIT 1686167305 \
+      FL /home/sd/Documents/Trabalho1/SOMADOR_1BIT.vhd PB ieee/std_logic_1164 1381692176
+AR work/MY_SOMADOR_1BIT/Behavioral 1686167306 \
+      FL /home/sd/Documents/Trabalho1/SOMADOR_1BIT.vhd EN work/MY_SOMADOR_1BIT 1686167305
